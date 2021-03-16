@@ -1,6 +1,6 @@
 {
   "name": "sampleexpressapp",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "just a simple express app as a sample",
   "main": "app.js",
   "scripts": {
