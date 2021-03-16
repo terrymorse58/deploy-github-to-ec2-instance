@@ -1,6 +1,0 @@
-version: 0.0
-os: linux
-files:
-  - source: /app.js
-    destination: /home/ec2-user/
-
