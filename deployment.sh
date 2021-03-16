@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 # create AWS deployment for SampleExpressApp
 # ref: https://docs.aws.amazon.com/cli/latest/reference/deploy/create-deployment.html
 aws deploy create-deployment \

@@ -1,0 +1,24 @@
+name: Push-to-EC2
+
+# Run this workflow every time a new commit is pushed to GitHub repo
+on: push
+
+jobs:
+  # Set the job key. The key is displayed as the job name
+  # when a job name is not provided
+  push-it:
+    # Name the Job
+    name: Push to EC2 Instance
+
+    # Set the type of machine to run on
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Deploy to EC2
+        uses: easingthemes/ssh-deploy@v2.1.5
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.EC2_SSH_KEY }}
+          REMOTE_HOST: ${{ secrets.EC2_HOST }}
+          REMOTE_USER: ${{ secrets.EC2_USER }}
+          TARGET: ${{ secrets.EC2_TARGET_DIR }}
+          EXCLUDE: "/.github/, /node_modules/"
