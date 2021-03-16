@@ -5,7 +5,7 @@ const express = require("express");
 const app = express();
 
 app.get("/", function(req, res) {
-  res.send(`<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><title>Hello World</title></head><body>Hello World 1.1!</body></html>`);
+  res.send(`<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><title>Hello World</title></head><body>Hello World 1.2!</body></html>`);
 });
 
 app.listen(3000,function(){
