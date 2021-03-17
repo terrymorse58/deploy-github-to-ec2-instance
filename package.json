@@ -1,7 +1,7 @@
 {
-  "name": "sampleexpressapp",
+  "name": "deploy-github-to-ec2-instance",
   "version": "1.0.7",
-  "description": "just a simple express app as a sample",
+  "description": "An example showing how to deploy from a GitHub repository to AWS EC2 instance",
   "main": "app.js",
   "scripts": {
     "help": "cat help.txt",
@@ -9,24 +9,27 @@
     "restart": "pm2 restart sample_app; pm2 save",
     "stop": "pm2 stop sample_app",
     "kill": "pm2 delete sample_app",
+    "open-local": "open http://localhost:3000",
     "pm2logs": "pm2 logs",
     "pm2dashboard": "pm2 monit",
     "pm2status": "pm2 status",
     "pm2save": "pm2 save",
     "pm2flush": "pm2 flush",
-    "pm2autostart": "pm2 startup"
+    "pm2autostart": "pm2 startup",
+    "myname": "echo \"my name is $LOGNAME\""
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/terrymorse58/sampleexpressapp.git"
+    "url": "git+https://github.com/terrymorse58/deploy-github-to-ec2-instance.git"
   },
   "author": "",
   "license": "UNLICENSED",
   "bugs": {
-    "url": "https://github.com/terrymorse58/sampleexpressapp/issues"
+    "url": "https://github.com/terrymorse58/deploy-github-to-ec2-instance/issues"
   },
-  "homepage": "https://github.com/terrymorse58/sampleexpressapp#readme",
+  "homepage": "https://github.com/terrymorse58/deploy-github-to-ec2-instance#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "pm2": "^4.5.5"
   }
 }

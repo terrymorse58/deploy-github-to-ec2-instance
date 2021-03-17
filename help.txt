@@ -7,6 +7,9 @@ where <command> is one of:
   stop         stop this app
   kill         delete this app
   ----------
+  open-local   open localhost app in browser
+  open-ec2     open EC2 app in browser
+  ----------
   pm2logs      display pm2 logs in realtime
   pm2dashboard display pm2 monitor dashboard
   pm2status    status of all apps
