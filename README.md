@@ -6,4 +6,4 @@ Here we go.
 
 ### Deployed to EC2
 
-Use [this URL]()
+Use [this URL](http://ec2-34-213-48-149.us-west-2.compute.amazonaws.com:3000)

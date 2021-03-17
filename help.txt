@@ -1,0 +1,16 @@
+Usage: npm run <command>
+
+where <command> is one of:
+  help         display this help info
+  start        delete & start this app
+  restart      restart this app
+  stop         stop this app
+  kill         delete this app
+  ----------
+  pm2logs      display pm2 logs in realtime
+  pm2dashboard display pm2 monitor dashboard
+  pm2status    status of all apps
+  pm2save      save all running apps to pm2 reboot list
+  pm2flush     flush pm2 app logs
+  pm2autostart create pm2 script for auto-start on reboot
+

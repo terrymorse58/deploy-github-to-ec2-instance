@@ -4,8 +4,17 @@
   "description": "just a simple express app as a sample",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js"
+    "help": "cat help.txt",
+    "start": "pm2 delete sample_app; pm2 start -f app.js --name sample_app --watch; pm2 save",
+    "restart": "pm2 restart sample_app; pm2 save",
+    "stop": "pm2 stop sample_app",
+    "kill": "pm2 delete sample_app",
+    "pm2logs": "pm2 logs",
+    "pm2dashboard": "pm2 monit",
+    "pm2status": "pm2 status",
+    "pm2save": "pm2 save",
+    "pm2flush": "pm2 flush",
+    "pm2autostart": "pm2 startup"
   },
   "repository": {
     "type": "git",
@@ -18,7 +27,6 @@
   },
   "homepage": "https://github.com/terrymorse58/sampleexpressapp#readme",
   "dependencies": {
-    "express": "^4.17.1",
-    "mongodb": "^3.6.4"
+    "express": "^4.17.1"
   }
 }
