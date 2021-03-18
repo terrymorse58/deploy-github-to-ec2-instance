@@ -1,6 +1,6 @@
 {
   "name": "deploy-github-to-ec2-instance",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "An example showing how to deploy from a GitHub repository to AWS EC2 instance",
   "main": "app.js",
   "scripts": {
